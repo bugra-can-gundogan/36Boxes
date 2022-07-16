@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@inject LanguageService language
+<div class="container mb-4">
+    <div class="my_container bg-white rounded py-1 px-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="game-table">
+            <div id="one" class="box-of"></div>
+            <div id="two" class="box-of"></div>
+            <div id="three" class="box-of"></div>
+            <div id="four" class="box-of"></div>
+            <div id="five" class="box-of"></div>
+            <div id="six" class="box-of"></div>
+            <div id="seven" class="box-of"></div>
+            <div id="eight" class="box-of"></div>
+            <div id="nine" class="box-of"></div>
+            <div id="ten" class="box-of"></div>
+            <div id="eleven" class="box-of"></div>
+            <div id="twelve" class="box-of"></div>
+            <div id="thirteen" class="box-of"></div>
+            <div id="fourteen" class="box-of"></div>
+            <div id="fifteen" class="box-of"></div>
+            <div id="sixteen" class="box-of"></div>
+            <div id="seventeen" class="box-of"></div>
+            <div id="eighteen" class="box-of"></div>
+            <div id="nineteen" class="box-of"></div>
+            <div id="twenty" class="box-of"></div>
+            <div id="twenty-one" class="box-of"></div>
+            <div id="twenty-two" class="box-of"></div>
+            <div id="twenty-three" class="box-of"></div>
+            <div id="twenty-four" class="box-of"></div>
+            <div id="twenty-five" class="box-of"></div>
+            <div id="twenty-six" class="box-of"></div>
+            <div id="twenty-seven" class="box-of"></div>
+            <div id="twenty-eight" class="box-of"></div>
+            <div id="twenty-nine" class="box-of"></div>
+            <div id="thirty" class="box-of"></div>
+            <div id="thirty-one" class="box-of"></div>
+            <div id="thirty-two" class="box-of"></div>
+            <div id="thirty-three" class="box-of"></div>
+            <div id="thirty-four" class="box-of"></div>
+            <div id="thirty-five" class="box-of"></div>
+            <div id="thirty-six" class="box-of"></div>
+        </div>
+        <div class="buttonsholder">
+                <button class="btn btn-warning m-1" onclick="startOperation('dfs')">Depth First Search</button>
+                <button class="btn btn-primary m-1" onclick="startOperation('bfs')">Breadth First Search</button>
+                <button class="btn btn-danger m-1" onclick="reset()">Reset</button>
+        </div>
+    </div>
+        <div id="howto" class="HowTo mt-4 bg-white rounded p-3">
+            <h2>@language.Getkey("howTo0")</h2>
+            <ul class="mt-2">
+                <li>@language.Getkey("howTo1")</li><br />
+                <li>@language.Getkey("howTo2")</li>
+            </ul>
+        </div>
+        <div id="algorithms" class="mt-4 bg-white rounded p-3">
+            <h3>@language.Getkey("algoVs0")</h3>
+            <ul class="mt-2">
+                <li>@language.Getkey("algoVs1")
+                </li><br />
+                <li>@language.Getkey("algoVs2")</li>
+            </ul>
+        </div>
+    </div>
+<script src="/js/site.js"></script>
